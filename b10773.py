@@ -1,7 +1,7 @@
 import sys
 sys.stdin = open('input.txt')
 
-K = int(input())
+N = int(input())
 account = []
 ls = []
 for i in range(K):
