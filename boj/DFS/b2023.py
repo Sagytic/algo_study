@@ -1,7 +1,6 @@
 import sys
 sys.stdin =open('input.txt')
 
-
 def check(n):
     if n < 2:
         return False
