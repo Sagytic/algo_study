@@ -1,23 +1,31 @@
 import sys
 sys.stdin = open('input.txt')
 
-def check(start, end, level):
-    if start == end:
-        li[level].append(tree[start])
-        return
-    middle = (start + end) // 2
-    li[level].append(tree[middle])
-    check(start, middle - 1, level+1)
-    check(middle+1, end, level+1)
-K = int(input())
-tree = list(map(int, (input().split())))
-length = len(tree)
-level = 0
-li = [[] for _ in range(K)]
-check(0, length-1, 0)
-# print(li)
-for i in li:
-    print(*i)
-# while True:
-#     li[level].append(tree[(length//2) +1])
-#     level += 1
+def order1(n):
+    print(n, end='')
+    if dic.get(n)[0] != '.':
+        order1(dic.get(n)[0])
+    if dic.get(n)[1] != '.':
+        order1(dic.get(n)[1])
+def order2(n):
+    if dic.get(n)[0] != '.':
+        order2(dic.get(n)[0])
+    print(n, end='')
+    if dic.get(n)[1] != '.':
+        order2(dic.get(n)[1])
+def order3(n):
+    if dic.get(n)[0] != '.':
+        order3(dic.get(n)[0])
+    if dic.get(n)[1] != '.':
+        order3(dic.get(n)[1])
+    print(n, end='')
+V = int(input())
+edge = [list(input().split()) for _ in range(V)]
+dic = {}
+for i in range(V):
+    dic[edge[i][0]] = edge[i][1], edge[i][2]
+order1('A')
+print()
+order2('A')
+print()
+order3('A')
