@@ -12,9 +12,12 @@
 #     if tmp == -1:
 #         break
 # stack.pop()
-# print(*stack)
+# if stack:
+#     print(*stack)
+# else:
+#     print('empty')
 
-from collections import *
+from collections import deque
 import sys
 sys.stdin = open('input.txt')
 input = sys.stdin.readline
@@ -25,4 +28,5 @@ while True:
     if tmp == -1: break
     if tmp: q.append(tmp)
     else: q.popleft()
-print(*q)
+if q: print(*q)
+else: print('empty')
