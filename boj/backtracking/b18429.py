@@ -1,6 +1,4 @@
 import sys
-from pprint import pprint
-import copy
 from itertools import permutations
 sys.stdin = open('input.txt')
 
@@ -40,6 +38,3 @@ print(ans)
 #     if ability >= 500:
 #         ans += 1
 # print(ans)
-
-
-
