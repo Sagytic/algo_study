@@ -1,10 +1,3 @@
-import sys
-from pprint import pprint
-import copy
-from itertools import permutations
-sys.stdin = open('input.txt')
-
-
 N, D = map(int, input().split())
 shortcut = sorted([list(map(int, input().split())) for _ in range(N)])
 for i in shortcut:
@@ -21,8 +14,3 @@ for i in range(D+1):
             if dis[j[1]] > (dis[i] + j[2]):
                 dis[j[1]] = (dis[i] + j[2])
 print(dis[D])
-
-
-
-
-
