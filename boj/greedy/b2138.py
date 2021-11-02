@@ -1,9 +1,3 @@
-import sys
-from pprint import pprint
-from copy import deepcopy
-from itertools import permutations
-sys.stdin = open('input.txt')
-
 from copy import deepcopy
 def bulb_switch(n, li):
     if n == N-1:
@@ -44,7 +38,3 @@ elif ans2 == -1:
     print(ans1)
 else:
     print(min(ans1, ans2))
-
-
-
-
