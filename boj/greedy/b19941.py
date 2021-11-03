@@ -1,9 +1,3 @@
-import sys
-from pprint import pprint
-from copy import deepcopy
-from itertools import permutations
-sys.stdin = open('input.txt')
-
 N, K = map(int, (input().split()))
 
 table = list(input())
@@ -21,4 +15,3 @@ for i in range(len(table)):
                 ans += 1
                 break
 print(ans)
-
