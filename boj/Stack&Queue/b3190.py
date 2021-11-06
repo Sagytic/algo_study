@@ -1,12 +1,4 @@
 import sys
-from pprint import pprint
-from copy import deepcopy
-from itertools import permutations
-from collections import deque
-
-sys.stdin = open('input.txt')
-
-import sys
 sys.setrecursionlimit(1000000)
 # dir:0 -> 우 / 1: 하 / 2: 좌 / 3: 상
 nx = [1, 0, -1, 0]
