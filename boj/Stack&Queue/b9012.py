@@ -1,11 +1,3 @@
-import sys
-from pprint import pprint
-from copy import deepcopy
-from itertools import permutations
-from collections import deque
-
-sys.stdin = open('input.txt')
-
 T = int(input())
 VPS = [list(input()) for _ in range(T)]
 ans = []
@@ -29,4 +21,3 @@ for i in range(T):
         ans.append('NO')
 for _ in ans:
     print(_)
-
