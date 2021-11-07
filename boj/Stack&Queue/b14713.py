@@ -1,33 +1,3 @@
-import sys
-from pprint import pprint
-from copy import deepcopy
-from itertools import permutations
-from collections import deque
-
-sys.stdin = open('input.txt')
-
-from collections import deque
-'''
-
-N = int(input())
-S = [list(input().split()) for _ in range(N)]
-L = list(input().split())
-
-for i in L:
-    for j in S:
-        if j:
-            if j[0] == i:
-                j.pop(0)
-                break
-ans = []
-for i in S:
-    ans += i
-
-if not ans:
-    print('Possible')
-else:
-    print('Impossible')
-'''
 from collections import deque
 N = int(input())
 S = []
