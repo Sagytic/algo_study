@@ -1,11 +1,3 @@
-import sys
-from pprint import pprint
-from copy import deepcopy
-from itertools import permutations
-from collections import deque
-
-sys.stdin = open('input.txt')
-
 dx = [-1, 1, 0, 0]
 dy = [0, 0, -1, 1]
 
