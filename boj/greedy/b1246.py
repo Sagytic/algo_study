@@ -1,12 +1,3 @@
-import sys
-from pprint import pprint
-from copy import deepcopy
-from itertools import permutations
-from collections import deque
-from random import *
-
-sys.stdin = open('input.txt')
-
 N, M = map(int, input().split())
 price = sorted([int(input()) for _ in range(M)])
 ans, ans_cost = 0, 0
@@ -19,4 +10,3 @@ for i in range(1, M+1):
         ans = new_price
         ans_cost = price[-i]
 print(ans_cost, ans)
-
