@@ -1,8 +1,3 @@
-import sys
-sys.stdin = open('input.txt')
-from pprint import pprint
-from collections import deque
-
 layer = 0
 while True:
     layer += 1
