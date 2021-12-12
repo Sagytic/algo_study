@@ -1,8 +1,3 @@
-import sys
-sys.stdin = open('input.txt')
-from pprint import pprint
-from collections import deque
-
 stick = list(input())
 ans = 0
 stack = []
