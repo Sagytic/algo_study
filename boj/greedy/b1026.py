@@ -1,8 +1,3 @@
-import sys
-sys.stdin = open('input.txt')
-from pprint import pprint
-from collections import deque
-
 N = int(input())
 A = sorted(list(map(int, input().split())), reverse=True)
 B = sorted(list(map(int, input().split())))
