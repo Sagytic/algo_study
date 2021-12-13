@@ -1,8 +1,3 @@
-import sys
-sys.stdin = open('input.txt')
-from pprint import pprint
-from collections import deque
-
 inp = list(map(int, input().split()))
 N, K = inp[0], inp[1]
 li = [_ for _ in range(1, N+1)]
