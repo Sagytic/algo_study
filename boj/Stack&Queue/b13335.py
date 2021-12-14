@@ -1,8 +1,3 @@
-import sys
-sys.stdin = open('input.txt')
-from pprint import pprint
-from collections import deque
-
 from collections import deque
 n, w, l = map(int, input().split())
 trucks = deque(map(int, input().split()))
